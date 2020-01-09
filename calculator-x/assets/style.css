@@ -1,0 +1,597 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ****************** */
+/* PARTIE APPRENTISSAGE CLASSIQUE */
+/* ****************** */
+
+body {
+    background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #7A0908;
+    height: auto;
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url(../fonts/futura-medium.ttf);
+}
+
+@font-face {
+    font-family: "SOT";
+    src: url(../fonts/The-SOT.otf);
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+}
+
+.header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header p {
+    font-size: 40px;
+    margin: 0 20px;
+    font-family: 'SOT', sans-serif;
+}
+
+.content {
+    font-family: 'Futura', sans-serif;
+    position: relative;
+}
+
+.content .choix {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.img-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-list img {
+    width: 500px;
+    height: auto;
+    margin: 0;
+}
+
+.img-list .btn-show {
+    position: absolute;
+    top: 100%; 
+    left: 49.5%;
+    transform: translate(-50%, -50%); 
+    background-color: #7A0908;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.btn-show:hover {
+    background-color: rgb(63, 15, 15);
+
+}
+
+select {
+    position: absolute;
+    top: 47%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 5px 20px;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 19px;
+    border-color: #fff;
+}
+
+option {
+    color: #000;
+}
+
+.return img {
+    width: 100px;
+    height: auto;
+}
+
+.return {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 700px;
+    left: 270px;
+}
+
+.return a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.return p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reponse {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reponse h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #7A0908;
+    margin: 5px auto 10px auto;
+}
+
+.reponse p {
+    line-height: 0.4;
+    font-size: 18px;
+}
+
+/* ****************** */
+/* PARTIE REVISION MENU */
+/* ****************** */
+
+.btn-play {
+    position: absolute;
+    top: 100%; 
+    left: 49.5%;
+    transform: translate(-50%, -50%); 
+    background-color: #7A0908;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-play:hover {
+    background-color: rgb(63, 15, 15);
+
+}
+
+/* ****************** */
+/* PARTIE REVISION EXERCICE */
+/* ****************** */
+
+.exo h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.exo {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.retry img {
+    width: 100px;
+    height: auto;
+}
+
+.retry {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 650px; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.retry a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.retry p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.exo .calcul {
+    font-size: 35px;    
+}
+
+.exo .input-value {
+    border-radius: 2px;
+    border-style: ridge;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid #7A0908;
+}
+
+.exo .right-answer {
+    color: green;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.exo .wrong-answer span {
+    color: red;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.exo .wrong-answer {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.exo .validate {
+    padding: 15px 10px;
+    background: #7A0908;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.validate:hover {
+    background-color: rgb(63, 15, 15);
+}
+
+.score-info {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #333;
+}
+
+/* ****************** */
+/* PARTIE ACCUEIL */
+/* ****************** */
+
+.home-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.home-list img {
+    margin-top: 40px;
+    width: 300px;
+    height: auto;
+}
+
+.home-list .learning {
+    font-family: "SOT", sans-serif;
+    position: absolute;
+    top: 27%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all .4s;
+}
+
+.home-list .training {
+    font-family: "SOT", sans-serif;
+    position: absolute;
+    top: 77%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all .4s;
+}
+
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.5s;
+}
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  transform: scale(0.8);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.home-list .learning:hover {
+    top: 29%; 
+}
+
+.home-list .training:hover {
+    top: 79%; 
+}
+
+
+
+
+
+
+@media (max-width: 576px) { 
+    body {
+        background: url(../img/fond-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: auto;
+    }
+    .header img {
+        width: 50px;
+        height: auto;
+    }
+    
+    .header .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 150px;
+    }
+    
+    .header p {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .home-list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .home-list img {
+        margin-top: 40px;
+        width: 200px;
+        height: auto;
+    }
+    
+    .home-list .learning {
+        top: 28%; 
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .home-list .training {
+        top: 79%; 
+        font-size: 16px;
+        text-align: center;
+    }
+
+    
+.content .choix {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.img-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-list img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+}
+
+.img-list .btn-show {
+    position: absolute;
+    top: 100%; 
+    left: 48%;
+    transform: translate(-50%, -50%); 
+    background-color: #7A0908;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+select {
+    top: 47%; 
+    left: 50%;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+
+.return img {
+    width: 50px;
+    height: auto;
+}
+
+.return {
+    top: 600px;
+    left: 30px;
+}
+
+.return a {
+    font-size:15px;
+}
+
+.return p {
+    margin-top: 5px;
+}
+
+.reponse {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reponse h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.divider {
+    width: 40px;
+    margin: 10px auto 15px auto;
+}
+
+.reponse p {
+    line-height: 0.1;
+    font-size: 12px;
+}
+
+.btn-play {
+    left: 48%;
+    font-size: 10px;
+}
+
+.retry {
+    top: 620px; 
+}
+
+.retry p {
+    font-size: 15px;
+}
+
+.retry img {
+    width: 70px;
+    height: auto;
+}
+
+.exo {
+    margin-top: 50px;
+}
+
+.exo h1 {
+    font-size: 28px;
+}
+
+.exo .calcul {
+    font-size: 25px;    
+}
+
+.exo .input-value {
+    font-size: 15px;
+}
+
+.exo .right-answer {
+    font-size: 18px;
+}
+
+.exo .wrong-answer span {
+   font-size: 18px;
+}
+
+.exo .wrong-answer {
+    font-size: 18px;
+}
+
+.exo .validate {
+    font-size: 12px;
+}
+
+.score-info {
+    font-size: 25px;
+}
+
+.home-list .learning:hover {
+    top: 31%; 
+}
+
+.home-list .training:hover {
+    top: 81%; 
+}
+
+}
+
+@media (max-width: 768px) { 
+
+
+}
+
+@media (max-width: 992px) { 
+
+
+
+}
+
+@media (max-width: 1200px) { 
+
+}
